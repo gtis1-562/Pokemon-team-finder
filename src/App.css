@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background: url("https://cdna.artstation.com/p/assets/images/images/037/307/064/large/albert-hernandez-pokemon-001.jpg?1620054739") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.signin-page {
+  text-align: center;
+  background-size: 100%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;  
+}
+
+.title-nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width:100%;
+}
+
+.pokemon-name {
+  height: 200px;
+  width: 200px;
+}
+
+.line-1 {
+  position: relative;
+  bottom: 100%;
+  top: 20%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);  
+  font-family: 'Press Start 2P', cursive;  
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 2s steps(80) 1s 1 normal both,
+           blinkTextCursor 500ms steps(80) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+.main-con-signin {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.pokeball {
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+  position:absolute;
+  bottom:-20px;
+}
+
+.pokeball:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.pokeball:active {
+  transform: rotate(45deg);
+}
+
+.click-ball {
+  position: absolute;
+  top:50px;
+  color:#ffffff;
+}
+.click-ball:hover{
+  cursor: pointer;
+}
+
+.signin {
+  border-radius: 50%;
+  height: 330px;
+  width: 315px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Home */
+
+.homeApp {
+  background: url("https://cdn.wallpapersafari.com/30/6/a4mrs3.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+}
+
+.audio {
+  margin-top: 10px;
+  height: 40px;
+
+}
+
+.sign-out {
+  margin-top: 10px;
+}
+.input-container{
+  margin-top: 100px;
+}
+
+.center-box {
+  margin-top: -150px;;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cards {
+  height: 300px;
+  width: 300px;
+  border: solid 5px black;
+  background-image: url('https://images.template.net/wp-content/uploads/2015/11/24201243/Pikachu-Playing-Wii-Pokemon-Download.jpg');
+  background-position: center;
+}
+
+#pokeimg {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.img-container {
+  width: 350px;
+  height:300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+}
+
+.team-img {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+button {
+  border-radius: 20px;
+  border-color: blue;
+  height: 40px;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .center-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .cards {
+    margin-top: 70%;
+  }
+}
