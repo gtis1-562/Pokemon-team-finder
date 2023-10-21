@@ -2,11 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getAuth, signOut } from "firebase/auth";
-import { authentication } from "../firebase-config";
+// import { getAuth, signOut } from "firebase/auth";
+// import { authentication } from "../firebase-config";
 import { useNavigate } from "react-router";
-import Audio from "./Audio";
+// import Audio from "./Audio";
 import Team from "./Team";
+import SignIn from "./SignIn";
 
 // const auth = getAuth();
 
@@ -70,21 +71,21 @@ const handleRemoveItems = (e) => {
   return (
     <div className="homeApp">
       <div className="nav">
-        <Audio />
-        <button className="sign-out"
-          onClick={() =>
-            signOut(authentication)
-              .then(() => {
-                console.log("sign out successful");
-              })
-              .then(() => navigate("/"))
-              .catch((err) => {
-                console.log(err);
-              })
-          }
+        {/* <Audio /> */}
+        <Link to = "/"><button className="sign-out"
+          // onClick={() =>
+          //   signOut(authentication)
+          //     .then(() => {
+          //       console.log("sign out successful");
+          //     })
+          //     .then(() => navigate("/"))
+          //     .catch((err) => {
+          //       console.log(err);
+          //     })
+          // }
         >
           Signout for reals
-        </button>
+        </button></Link>
       </div>
       <div className="input-container">
         <p className="line-1 anim-typewriter">Poké Search!</p>

@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { authentication } from "../firebase-config";
-import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+// import { authentication } from "../firebase-config";
+// import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useNavigate } from "react-router";
 
 export default function SignIn() {
   let navigate = useNavigate();
 
-  const signInWithGoogle = () => {
-    const provider = new GoogleAuthProvider();
-    signInWithPopup(authentication, provider)
-      .then((re) => {
-        console.log(re);
-        navigate("/info");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  // const signInWithGoogle = () => {
+  //   const provider = new GoogleAuthProvider();
+  //   signInWithPopup(authentication, provider)
+  //     .then((re) => {
+  //       console.log(re);
+  //       navigate("/info");
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
   // <audio id="my_audio" src="https://vgmsite.com/soundtracks/pokemon-gameboy-sound-collection/vvdpydwp/101-opening.mp3" loop="loop"></audio>
 
   return (
@@ -33,7 +33,8 @@ export default function SignIn() {
       </div>
 
       <div className="main-con-signin">
-        <button className="signin" onClick={signInWithGoogle}>
+       <Link to="/info"> <button className="signin" //</div>onClick={signInWithGoogle}
+        >
           <img
             className="pokeball"
             src="https://www.onlinepalette.com/wp-content/uploads/2021/07/Pokeball.png"
@@ -42,9 +43,9 @@ export default function SignIn() {
             width="350px"
           ></img>
           <h1 className="click-ball">Sign In</h1>
-        </button>
+        </button></Link>
         {/* <img className="pokeball" src="https://www.onlinepalette.com/wp-content/uploads/2021/07/Pokeball.png" alt="" height="100px" width="100px"></img> */}
-        {/* <Link to = "/info"><button>Please Sign in</button></Link> */}
+        {/* <Link to = "/info"><button>Please Come In</button></Link> */}
       </div>
     </div>
   );
