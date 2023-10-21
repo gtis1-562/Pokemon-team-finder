@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import { authentication } from "../firebase-config";
 // import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router";
 
 export default function SignIn() {
-  let navigate = useNavigate();
+  // let navigate = useNavigate();
 
   // const signInWithGoogle = () => {
   //   const provider = new GoogleAuthProvider();

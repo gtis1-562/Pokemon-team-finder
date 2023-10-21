@@ -1,8 +1,8 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import SignIn from "./components/SignIn";
-import { authentication } from "./firebase-config"
+// import { authentication } from "./firebase-config"
 
 
 function App() {

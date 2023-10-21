@@ -4,10 +4,10 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 // import { getAuth, signOut } from "firebase/auth";
 // import { authentication } from "../firebase-config";
-import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router";
 // import Audio from "./Audio";
 import Team from "./Team";
-import SignIn from "./SignIn";
+// import SignIn from "./SignIn";
 
 // const auth = getAuth();
 
@@ -25,7 +25,7 @@ export default function Home() {
 
   console.log(arr);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     //put effect here
