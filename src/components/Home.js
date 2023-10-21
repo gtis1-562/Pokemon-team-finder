@@ -47,7 +47,8 @@ export default function Home() {
     e.preventDefault();
     console.log("hi");
     let value = document.getElementById("input").value;
-    setPokename(value);
+    let caseValue = value.toLowerCase();
+    setPokename(caseValue);
   };
 
 
@@ -92,6 +93,7 @@ const handleRemoveItems = (e) => {
       <form onSubmit={handleForm}>
         <input id="input" type="text" placeholder="pokemon name"></input>
       </form>
+      <button onClick={handleForm}>Search</button>
       </div>
       <div className="center-box">
         <div className="cards">
